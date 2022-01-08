@@ -30,6 +30,7 @@ header::after {
     height: 0.5px;
     background: #DBDBDB;
 }
+
 .head-feed {
     background: #fff;
     display: flex;
@@ -59,6 +60,7 @@ header::after {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+
 .head-search input {
     width: 316px;
     height: 32px;
@@ -73,6 +75,7 @@ header::after {
     vertical-align: middle;
     outline: none;
 }
+
 .head-search input::placeholder {
     color: #C4C4C4;
 }
@@ -84,6 +87,7 @@ header::after {
     flex-direction: column;
     justify-content: center;
 }
+
 .cont-ini-feed {
     display: flex;
     flex-direction: column;
@@ -108,10 +112,20 @@ header::after {
     margin: 0 auto 20px;
 }
 
-/* 메인 - 검색 피드 */
-.cont-search-feed {
+/* 메인 - 포스트 */
+.post {
 
 }
+.post .head-post {
+
+}
+
+.post .head-post .img-profile {
+    width: 42px;
+}
+
+/* 메인 - 검색 피드 */
+.cont-search-feed {}
 
 
 /* 푸터 - 네비게이션 */

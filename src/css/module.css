@@ -99,6 +99,35 @@ html {
     margin-right: 20px;
 }
 
+.btn-icon-more {
+    background: url(../img/icon/s-icon-more-vertical.png);
+    width: 17.5px;
+    height: 17.5px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-icon-heart {
+    background: center url(../img/icon/icon-heart.png);
+    width: 19px;
+    height: 17px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+}
+
+.btn-icon-comment {
+    background: center url(../img/icon/icon-commetn.png);
+    width: 19px;
+    height: 17px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+}
+
 /* 모듈 - 네비게이션 */
 .nav-module {
     display: flex;
@@ -111,6 +140,7 @@ html {
     -moz-box-sizie: border-box;
     border-top: 0.5px solid #DBDBDB;
 }
+
 .nav-li-module {
     display: flex;
     flex-direction: column;
@@ -153,4 +183,69 @@ html {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+}
+
+.cont-chat-module {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 24px 16px 0;
+    box-sizing: border-box;
+}
+
+.cont-chat-module .li-chat-module {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.cont-chat-module .li-chat-module .img-profile {
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+    float: left;
+}
+.cont-chat-module .li-chat-module .img-profile::after {
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+
+.cont-chat-module .li-chat-module .cont-txt-chat-module {
+    display: flex;
+    padding: 2px 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont-chat-module .li-chat-module .txt-user-name {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.cont-chat-module .li-chat-module .txt-chat {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #767676;
+}
+
+.cont-chat-module .li-chat-module .time-chat {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #DBDBDB;
+    position: absolute;
+    bottom: 3px;
+    right: 0;
 }

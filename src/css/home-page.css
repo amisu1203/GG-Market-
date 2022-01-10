@@ -83,9 +83,13 @@ header::after {
 /* 메인 - 최초 피드 */
 .cont-feed {
     height: calc(100vh - 108px);
+    overflow: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.cont-feed .post:nth-child(2) {
+    padding: 20px 16px;
 }
 
 .cont-ini-feed {
@@ -112,16 +116,111 @@ header::after {
     margin: 0 auto 20px;
 }
 
-/* 메인 - 포스트 */
+/* 메인 - 포스트  */
 .post {
-
+    padding: 20px 16px 0;
 }
-.post .head-post {
 
+.post .head-post {
+    display: flex;
 }
 
 .post .head-post .img-profile {
     width: 42px;
+    margin-right: 12px;
+}
+
+.post .head-post .txt-user-name {
+    font-size: 1.4rem;
+    padding-top: 4px;
+    box-sizing: border-box;
+    line-height: 1.75rem;
+}
+
+.post .head-post .txt-user-name::after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #767676;
+}
+
+.post .head-post .btn-icon-more {
+    margin: 4px 0 0 auto;
+}
+
+.post .main-post {
+    padding-left: 54px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.post .main-post .txt-post {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.post .main-post .img-post {
+    margin-bottom: 13px;
+}
+
+.post .main-post .cont-like-comment {
+    display: flex;
+}
+
+.post .main-post .cont-like-comment .btn-icon-heart {
+    margin-right: 41px;
+    margin-bottom: 18px;
+}
+
+.post .main-post .cont-like-comment .btn-icon-heart::after {
+    content: '58';
+    display: inline-block;
+    clear: both;
+    position: absolute;
+    left: 24.1px;
+    top: 0;
+    line-height: 20px;
+    color: #767676;
+}
+
+.post .main-post .cont-like-comment .btn-icon-comment::after {
+    content: '12';
+    display: inline-block;
+    clear: both;
+    position: absolute;
+    left: 24.1px;
+    top: 0;
+    line-height: 20px;
+    color: #767676;
+}
+
+.post .main-post time {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #767676;
+}
+
+.post-1 .head-post .txt-user-name::after {
+    content: '@ weniv_Mandarin ';
+}
+
+.post-2 .head-post .txt-user-name::after {
+    content: '@ hanlabong22';
+}
+
+.post-3 .head-post .txt-user-name::after {
+    content: '@ weniv_Mandarin ';
 }
 
 /* 메인 - 검색 피드 */

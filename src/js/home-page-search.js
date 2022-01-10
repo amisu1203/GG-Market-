@@ -1,25 +1,31 @@
+// 헤드
 const headFeed = document.querySelector('.head-feed');
 const headSearch = document.querySelector('.head-search');
-
+// 버튼
 const btnSearchUser = document.querySelector('.btn-search-user');
-const btnBackToFeed = document.querySelector('.btn-back-to-feed');
-
+const btnBackFromSearch = document.querySelector('.btn-back-from-search');
+// 컨테이너
+const contMainPost = document.querySelector('.cont-main-post');
 const contFeed = document.querySelector('.cont-feed');
+// 네비게이션 리스트
+const navHome = document.querySelector('.nav-home');
 
-// hidden 클래스 토글시키는 함수
-function addClassHidden() {
-    contFeed.classList.toggle('hidden');
+
+// show search page
+function clickBtnSearch(event) {
     headFeed.classList.toggle('hidden');
+    contFeed.classList.toggle('hidden');
     headSearch.classList.toggle('hidden');
 }
 
-function clickBtnSearch(event) {
-    addClassHidden();
-}
-
+// show the main feed page
 function clickBtnBack(event) {
-    addClassHidden();
+    headFeed.classList.remove('hidden');
+    contMainPost.classList.remove('hidden');
+    contFeed.classList.remove('hidden');
+    headSearch.classList.add('hidden');
+    headChat.classList.add('hidden');
 }
 
 btnSearchUser.addEventListener('click',clickBtnSearch);
-btnBackToFeed.addEventListener('click',clickBtnBack);
+btnBackFromSearch.addEventListener('click',clickBtnBack);

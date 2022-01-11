@@ -9,9 +9,13 @@ const navChat = document.querySelector('.nav-chat');
 const imgNavChat = document.querySelector('.nav-chat::before');
 
 
+// 채팅 리스트 클릭
+function clickListChat(event) {
+    console.log(event);
+}
+
 // show chat page
 function clickNavChat(event) {
-    imgNavChat
     headFeed.classList.add('hidden');
     headChat.classList.remove('hidden');
     contMainPost.classList.add('hidden');
